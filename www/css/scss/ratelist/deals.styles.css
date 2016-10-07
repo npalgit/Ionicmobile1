@@ -1,0 +1,95 @@
+.feed-deals-view {
+  background-color: #faf2f0; }
+  .feed-deals-view .products-row {
+    margin-top: 5px;
+    padding-bottom: 5px; }
+    .feed-deals-view .products-row .deals-product-container {
+      margin: 0px 18px 5px;
+      box-shadow: none;
+      border-radius: 6px;
+      padding: 0px; }
+      .feed-deals-view .products-row .deals-product-container:last-child {
+        margin-bottom: 2px; }
+      .feed-deals-view .products-row .deals-product-container .row {
+        padding: 0px;
+        margin: 0px; }
+        .feed-deals-view .products-row .deals-product-container .row .col {
+          padding: 0px;
+          margin: 0px; }
+      .feed-deals-view .products-row .deals-product-container .product-anchor {
+        text-decoration: none; }
+      .feed-deals-view .products-row .deals-product-container .top-row {
+        border-bottom: 2px dashed #faf2f0;
+        padding: 8px 8px 8px 14px;
+        height: 50px; }
+        .feed-deals-view .products-row .deals-product-container .top-row .logo-col {
+          height: 100%; }
+          .feed-deals-view .products-row .deals-product-container .top-row .logo-col .deal-logo {
+            display: block;
+            max-height: 100%; }
+        .feed-deals-view .products-row .deals-product-container .top-row .shop-col {
+          height: 100%;
+          text-align: right; }
+          .feed-deals-view .products-row .deals-product-container .top-row .shop-col .shop-button {
+            min-height: 0px;
+            height: 32px;
+            line-height: 27px;
+            border-radius: 16px; }
+      .feed-deals-view .products-row .deals-product-container .middle-row {
+        padding: 24px 8px 12px 14px; }
+        .feed-deals-view .products-row .deals-product-container .middle-row .product-title {
+          color: #4D301C;
+          margin: 0px;
+          margin-bottom: 8px; }
+          .feed-deals-view .products-row .deals-product-container .middle-row .product-title a {
+            color: #4D301C; }
+        .feed-deals-view .products-row .deals-product-container .middle-row .product-description {
+          color: #a48d80;
+          font-size: 13px;
+          line-height: 16px;
+          margin: 0px; }
+        .feed-deals-view .products-row .deals-product-container .middle-row .bookmark-col {
+          text-align: center; }
+          .feed-deals-view .products-row .deals-product-container .middle-row .bookmark-col .bookmark-button {
+            color: #9ae89a; }
+            .feed-deals-view .products-row .deals-product-container .middle-row .bookmark-col .bookmark-button::before {
+              font-size: 28px;
+              line-height: 28px;
+              margin: 0px; }
+      .feed-deals-view .products-row .deals-product-container .bottom-row {
+        padding: 0px 8px 12px 14px; }
+        .feed-deals-view .products-row .deals-product-container .bottom-row .deal-code {
+          color: #9ae89a;
+          text-transform: uppercase;
+          padding: 8px 12px;
+          border: 2px solid #9ae89a;
+          height: 32px;
+          border-radius: 16px;
+          display: inline-block;
+          line-height: 12px; }
+        .feed-deals-view .products-row .deals-product-container .bottom-row .time-col {
+          text-align: right; }
+          .feed-deals-view .products-row .deals-product-container .bottom-row .time-col .time-left-container {
+            color: #a48d80;
+            display: block;
+            width: 100%; }
+            .feed-deals-view .products-row .deals-product-container .bottom-row .time-col .time-left-container .deal-time-left {
+              display: inline-block;
+              word-spacing: -1px;
+              letter-spacing: -1px;
+              line-height: 22px;
+              float: right;
+              font-size: 12px; }
+              .feed-deals-view .products-row .deals-product-container .bottom-row .time-col .time-left-container .deal-time-left.days-left-0 {
+                color: #ff8b81; }
+              .feed-deals-view .products-row .deals-product-container .bottom-row .time-col .time-left-container .deal-time-left.days-left-1 {
+                color: #ffab6b; }
+            .feed-deals-view .products-row .deals-product-container .bottom-row .time-col .time-left-container .icon {
+              display: inline-block;
+              height: 22px;
+              float: right;
+              margin-right: 4px; }
+              .feed-deals-view .products-row .deals-product-container .bottom-row .time-col .time-left-container .icon::before {
+                font-size: 22px;
+                line-height: 22px;
+                margin: 0px; }

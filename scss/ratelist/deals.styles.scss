@@ -1,0 +1,209 @@
+$deals-view-bg: #faf2f0;
+$deals-product-top-row-height: 50px;
+$deals-product-top-row-margin: 2px;
+$deals-product-top-padding: 8px;
+$deals-product-color: #4D301C;
+$deals-product-description-alternative-color: #a48d80;
+$deals-product-shop-button-height: $deals-product-top-row-height - (2*$deals-product-top-padding) - $deals-product-top-row-margin;
+
+$deals-bookmark-button-color: #9ae89a;
+
+$deals-code-color: #9ae89a;
+$deals-code-border: 2px;
+$deals-code-inner-height: 28px;
+$deals-code-height: $deals-code-inner-height + (2*$deals-code-border);
+$deals-code-padding: 8px;
+$deals-time-left-color: #a48d80;
+$deals-time-left-1d-color: #ffab6b;
+$deals-time-left-0d-color: #ff8b81;
+
+$deals-shop-button-bg: #9ae89a;
+$deals-shop-button-border: rgba($deals-shop-button-bg, 0);
+$deals-shop-button-active-bg: darken($deals-shop-button-bg, 10%);
+$deals-shop-button-active-border: rgba($deals-shop-button-bg, 0);
+$deals-shop-button-text: #FFF;
+
+
+
+.feed-deals-view
+{
+	background-color: $deals-view-bg;
+
+	.products-row
+	{
+		margin-top: 5px;
+		padding-bottom: 5px;
+
+		.deals-product-container
+		{
+			margin: 0px 18px 5px;
+			box-shadow: none;
+			border-radius: 6px;
+			padding: 0px;
+
+			&:last-child
+			{
+				margin-bottom: 2px;
+			}
+
+			.row
+			{
+				padding: 0px;
+				margin: 0px;
+
+				.col
+				{
+					padding: 0px;
+					margin: 0px;
+				}
+			}
+
+			.product-anchor
+			{
+				text-decoration: none;
+			}
+
+			.top-row
+			{
+				border-bottom: 2px dashed $deals-view-bg;
+				padding: $deals-product-top-padding 8px $deals-product-top-padding 14px;
+				height: $deals-product-top-row-height;
+
+				.logo-col
+				{
+					height: 100%;
+					
+					
+
+					.deal-logo
+					{
+						display: block;
+						max-height: 100%;
+					}
+				}
+
+				.shop-col
+				{
+					height: 100%;
+					text-align: right;
+
+					.shop-button
+					{
+						min-height: 0px;
+						height: $deals-product-shop-button-height;
+						line-height: $deals-product-shop-button-height - 5px;
+						border-radius: $deals-product-shop-button-height/2;
+											}
+				}
+			}
+
+			.middle-row
+			{
+				padding: 24px 8px 12px 14px;
+
+				.product-title
+				{
+					color: $deals-product-color;
+					margin: 0px;
+					margin-bottom: 8px;
+
+					a
+					{
+						color: $deals-product-color;
+					}
+				}
+
+				.product-description
+				{
+					color: $deals-product-description-alternative-color;
+					font-size: 13px;
+				  line-height: 16px;
+					margin: 0px;
+				}
+
+				.bookmark-col
+				{
+					text-align: center;
+
+					.bookmark-button
+					{
+						color: $deals-bookmark-button-color;
+
+						&::before
+						{
+							font-size: 28px;
+							line-height: 28px;
+  						margin: 0px;
+						}
+					}
+				}
+			}
+
+			.bottom-row
+			{
+				padding: 0px 8px 12px 14px;
+
+				.deal-code
+				{
+					color: $deals-code-color;
+					text-transform: uppercase;
+					padding: $deals-code-padding ($deals-code-padding*1.5);
+					border: $deals-code-border solid $deals-code-color;
+					height: $deals-code-height;
+					border-radius: $deals-code-height/2;
+					display: inline-block;
+					line-height: ($deals-code-inner-height) - (2*$deals-code-padding);
+				}
+
+				.time-col
+				{
+					text-align: right;
+					
+					
+
+					.time-left-container
+					{
+						color: $deals-time-left-color;
+						display: block;
+						width: 100%;
+
+						.deal-time-left
+						{
+						  display: inline-block;
+							word-spacing: -1px;
+							letter-spacing: -1px;
+							line-height: 22px;
+  						float: right;
+							font-size: 12px;
+
+							&.days-left-0
+							{
+								color: $deals-time-left-0d-color;
+							}
+
+							&.days-left-1
+							{
+								color: $deals-time-left-1d-color;
+							}
+						}
+
+						.icon
+						{
+						  display: inline-block;
+							height: 22px;
+							float: right;
+							margin-right: 4px;
+
+							&::before
+							{
+								font-size: 22px;
+								line-height: 22px;
+	  						margin: 0px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
